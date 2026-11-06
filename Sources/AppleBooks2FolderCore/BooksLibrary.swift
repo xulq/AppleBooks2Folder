@@ -70,7 +70,7 @@ public struct BooksLibrary: Sendable {
         do {
             let file = try databaseFile()
             let fs = FileManager.default
-            let workspace = fs.temporaryDirectory.appendingPathComponent("AppleBooks2Floder-Catalog-" + UUID().uuidString)
+            let workspace = fs.temporaryDirectory.appendingPathComponent("AppleBooks2Folder-Catalog-" + UUID().uuidString)
             try fs.createDirectory(at: workspace, withIntermediateDirectories: false, attributes: [.posixPermissions: 0o700])
             defer { try? fs.removeItem(at: workspace) }
             let local = workspace.appendingPathComponent("catalog.sqlite")

@@ -3,7 +3,7 @@ import Foundation
 import SQLite3
 import XCTest
 import ZIPFoundation
-@testable import AppleBooks2FloderCore
+@testable import AppleBooks2FolderCore
 
 final class ExportTests: XCTestCase {
     func testWALCatalogCopiesPDFAndPackagesEPUB() async throws {
@@ -302,7 +302,7 @@ final class ExportTests: XCTestCase {
 }
 
 private final class Fixture {
-    let root = FileManager.default.temporaryDirectory.appendingPathComponent("AppleBooks2FloderTests-" + UUID().uuidString)
+    let root = FileManager.default.temporaryDirectory.appendingPathComponent("AppleBooks2FolderTests-" + UUID().uuidString)
     var documents: URL { BooksFolder.library.url(in: root) }
     var destination: URL { root.appendingPathComponent("Destination") }
     var state: URL { root.appendingPathComponent("State") }

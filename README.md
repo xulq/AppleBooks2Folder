@@ -1,4 +1,4 @@
-# AppleBooks2Floder
+# AppleBooks2Folder
 
 简体中文 · [English](README.en.md)
 
@@ -6,15 +6,15 @@
 
 ## 下载和安装
 
-[**下载 macOS 安装包**](https://github.com/xulq/AppleBooks2Floder/releases/latest/download/AppleBooks2Floder-macOS.zip) · [查看发布记录](https://github.com/xulq/AppleBooks2Floder/releases)
+[**下载 macOS 安装包**](https://github.com/xulq/AppleBooks2Folder/releases/latest) · [查看发布记录](https://github.com/xulq/AppleBooks2Folder/releases)
 
-适用于 macOS 14 及以上的 Apple 芯片和 Intel Mac。解压 ZIP 后，将 `AppleBooks2Floder.app` 拖到「应用程序」，然后打开。
+适用于 macOS 14 及以上的 Apple 芯片和 Intel Mac。在发布页的 **Assets** 中下载 macOS ZIP。解压后，将应用拖到「应用程序」，然后打开。升级时，请先退出旧版，并将旧版应用移出「应用程序」。
 
 此版本未经过 Apple 公证。若 macOS 提示无法验证开发者，在确认安装包来自上方的 GitHub 下载链接后，可前往「系统设置 → 隐私与安全性 → 仍要打开」。[Apple 的首次打开说明](https://support.apple.com/zh-cn/102445)
 
 ## 使用方法
 
-1. 在 Mac 的「图书」里下载要导出的书。AppleBooks2Floder 会自动识别资料库和标准的本地、iCloud 图书原件目录。若 macOS 提示访问其他应用数据，请允许访问。
+1. 在 Mac 的「图书」里下载要导出的书。AppleBooks2Folder 会自动识别资料库和标准的本地、iCloud 图书原件目录。若 macOS 提示访问其他应用数据，请允许访问。
 2. 点击「选择文件夹」，选择已配置的网盘同步目录或其中的子目录。坚果云云桥用户可从访达侧栏「位置」进入坚果云。也可以选择普通本地文件夹。
 3. 在「导出范围」选择全部或前面的书。点击「立即导出」，或开启「自动同步」并选择同步频率。关闭窗口后应用仍在菜单栏运行，可从菜单栏暂停自动同步或立即导出。
 4. 等网盘客户端完成上传后，在 Android 或其他设备上打开同一目录，用阅读应用打开或导入 PDF／EPUB。电子书阅读器需要能访问该目录，或通过自己的传书方式导入文件。
@@ -23,7 +23,7 @@
 
 ## 界面语言
 
-支持简体中文和英语。应用默认跟随 macOS 的语言偏好。若要单独切换，在「系统设置 → 通用 → 语言与地区 → 应用程序」中添加 AppleBooks2Floder，选择语言，再退出并重新打开应用。语言偏好中没有匹配项时使用英语。[Apple 的应用语言设置说明](https://support.apple.com/zh-cn/guide/mac-help/mh26684/mac)
+支持简体中文和英语。应用默认跟随 macOS 的语言偏好。若要单独切换，在「系统设置 → 通用 → 语言与地区 → 应用程序」中添加 AppleBooks2Folder，选择语言，再退出并重新打开应用。语言偏好中没有匹配项时使用英语。[Apple 的应用语言设置说明](https://support.apple.com/zh-cn/guide/mac-help/mh26684/mac)
 
 ## 文件夹权限
 
@@ -31,7 +31,7 @@
 
 如果 macOS 拒绝读取且没有弹出系统提示，点击「授权图书资料库」或导出结果中相应的授权按钮。如果系统面板停在「文稿」等其他位置，点击「复制图书路径」。按 **⌘ Command + ⇧ Shift + G** 打开「前往文件夹」，粘贴路径并回车。到达图书目录后点击「授权」，应用会保存只读授权并自动重试。
 
-升级后会尝试继续使用已保存的目标文件夹。如果目标授权已失效，请重新选择目标。若旧版曾获完全磁盘访问权限，可在「系统设置 → 隐私与安全性 → 完全磁盘访问权限」中关闭 AppleBooks2Floder。
+升级后会尝试继续使用已保存的目标文件夹。如果目标授权已失效，请重新选择目标。若旧版曾获完全磁盘访问权限，可在「系统设置 → 隐私与安全性 → 完全磁盘访问权限」中关闭 AppleBooks2Folder。
 
 ## 导出范围和同步频率
 
@@ -56,10 +56,10 @@ swift test
 ./scripts/build-app.sh
 ```
 
-安装包生成在 `dist/AppleBooks2Floder-macOS.zip`。脚本默认使用本地临时签名，也可通过 `APPLEBOOKS_SIGN_IDENTITY` 指定签名身份。跨签名身份升级后，macOS 可能要求重新选择目标文件夹。
+安装包生成在 `dist/AppleBooks2Folder-macOS.zip`。脚本默认使用本地临时签名，也可通过 `APPLEBOOKS_SIGN_IDENTITY` 指定签名身份。跨签名身份升级后，macOS 可能要求重新选择目标文件夹。
 
 ## 许可证
 
-从 0.4.4 起，AppleBooks2Floder 应用及其项目自有源码采用 **Komorebi License 1.0.0**。你可以为个人学习、娱乐等非商业用途使用软件，或修改并构建供自己使用的版本。商业使用、组织使用，以及再分发源码、应用或修改版，需要另外取得授权。先前取得的副本适用其原许可。[许可证全文](LICENSE)
+从 0.4.4 起，AppleBooks2Folder 应用及其项目自有源码采用 **Komorebi License 1.0.0**。你可以为个人学习、娱乐等非商业用途使用软件，或修改并构建供自己使用的版本。商业使用、组织使用，以及再分发源码、应用或修改版，需要另外取得授权。先前取得的副本适用其原许可。[许可证全文](LICENSE)
 
 内置 ZIPFoundation 代码继续使用其原有的 MIT 许可证。本项目参考 BookAlong Sync 的只读书目识别和 EPUB 打包流程。[ZIPFoundation 许可证](Vendor/ZIPFoundation/LICENSE)

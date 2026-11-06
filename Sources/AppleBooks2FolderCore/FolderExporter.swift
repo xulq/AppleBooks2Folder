@@ -19,6 +19,7 @@ public struct ExportReport: Sendable {
 }
 
 public actor FolderExporter {
+    // Retain the existing cache directory for upgrades.
     public static let defaultStateDirectory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
         .appendingPathComponent("AppleBooks2Floder", isDirectory: true)
 
@@ -107,7 +108,7 @@ public actor FolderExporter {
 
     private func export(_ book: Original, stem: String, to folder: URL) throws -> (url: URL, created: Bool) {
         let fs = FileManager.default
-        let staging = fs.temporaryDirectory.appendingPathComponent("AppleBooks2Floder-" + UUID().uuidString, isDirectory: true)
+        let staging = fs.temporaryDirectory.appendingPathComponent("AppleBooks2Folder-" + UUID().uuidString, isDirectory: true)
         try fs.createDirectory(at: staging, withIntermediateDirectories: false, attributes: [.posixPermissions: 0o700])
         defer { try? fs.removeItem(at: staging) }
         let staged = staging.appendingPathComponent("book").appendingPathExtension(book.ext)
@@ -119,7 +120,7 @@ public actor FolderExporter {
 
         let size = try FileStamp(staged).size
         let digest = try Self.digest(staged)
-        let pending = folder.appendingPathComponent(".applebooks2floder-" + UUID().uuidString + ".partial")
+        let pending = folder.appendingPathComponent(".applebooks2folder-" + UUID().uuidString + ".partial")
         defer { try? fs.removeItem(at: pending) }
 
         // The destination is shared with other apps and machines. Publish a complete

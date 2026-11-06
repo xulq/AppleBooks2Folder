@@ -1,5 +1,5 @@
 import AppKit
-import AppleBooks2FloderCore
+import AppleBooks2FolderCore
 import Combine
 import Foundation
 
@@ -243,7 +243,7 @@ private final class BooksFolderValidator: NSObject, NSOpenSavePanelDelegate {
 
     func validate(_ url: URL) throws {
         guard folder.acceptsAuthorizationFolder(url) else {
-            throw NSError(domain: "AppleBooks2Floder.BooksFolder", code: 1, userInfo: [
+            throw NSError(domain: "AppleBooks2Folder.BooksFolder", code: 1, userInfo: [
                 NSLocalizedDescriptionKey: message("请前往「\(folder.label)」文件夹。",
                                                     "Go to the \(folder.label) folder to continue."),
                 NSLocalizedRecoverySuggestionErrorKey: message(

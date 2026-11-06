@@ -1,5 +1,5 @@
 import AppKit
-import AppleBooks2FloderCore
+import AppleBooks2FolderCore
 import SwiftUI
 
 struct SyncView: View {
@@ -39,7 +39,7 @@ struct SyncView: View {
                 .frame(width: 58, height: 58)
                 .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 3) {
-                Text("AppleBooks2Floder").font(.title.bold())
+                Text("AppleBooks2Folder").font(.title.bold())
                 Text(message("从 Apple Books 导出 PDF 和 EPUB", "Export PDFs and EPUBs from Apple Books"))
                     .foregroundStyle(.secondary)
             }

@@ -3,11 +3,12 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleExecutable</key>
-    <string>AppleBooks2Floder</string>
+    <string>AppleBooks2Folder</string>
+    <!-- Keep the established bundle ID for existing installations. -->
     <key>CFBundleIdentifier</key>
     <string>org.applebooks2floder.mac</string>
     <key>CFBundleName</key>
-    <string>AppleBooks2Floder</string>
+    <string>AppleBooks2Folder</string>
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>CFBundleLocalizations</key>
@@ -20,14 +21,14 @@
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.4.4</string>
+    <string>0.4.5</string>
     <key>CFBundleVersion</key>
-    <string>9</string>
+    <string>10</string>
     <key>LSMinimumSystemVersion</key>
     <string>14.0</string>
     <key>NSHighResolutionCapable</key>
     <true/>
     <key>NSAppDataUsageDescription</key>
-    <string>AppleBooks2Floder reads the Apple Books library and downloaded originals to export PDFs and EPUBs.</string>
+    <string>AppleBooks2Folder reads the Apple Books library and downloaded originals to export PDFs and EPUBs.</string>
 </dict>
 </plist>
