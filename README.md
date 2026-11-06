@@ -4,13 +4,20 @@
 
 一个供个人使用的 macOS 应用。把 Apple Books 中已下载、无 DRM 的 PDF 和 EPUB 导出到坚果云或其他网盘的同步文件夹，再在 Android、平板或支持相应格式的电子书阅读器上打开。
 
+## 下载和安装
+
+[**下载 macOS 安装包（v0.4.4）**](https://github.com/xulq/AppleBooks2Floder/raw/5102afa0a2f0c989dc35bd6682dfe76416c1954b/dist/AppleBooks2Floder-macOS.zip) · [查看发布记录](https://github.com/xulq/AppleBooks2Floder/releases)
+
+适用于 macOS 14 及以上的 Apple 芯片和 Intel Mac。解压 ZIP 后，将 `AppleBooks2Floder.app` 拖到「应用程序」，然后打开。
+
+此版本未经过 Apple 公证。若 macOS 提示无法验证开发者，在确认安装包来自上方的 GitHub 下载链接后，可前往「系统设置 → 隐私与安全性 → 仍要打开」。[Apple 的首次打开说明](https://support.apple.com/zh-cn/102445)
+
 ## 使用方法
 
-1. 解压 `AppleBooks2Floder-macOS.zip`，把 `AppleBooks2Floder.app` 移到「应用程序」并打开。应用支持 macOS 14 及以上，安装包包含 Apple 芯片和 Intel 版本。
-2. 在 Mac 的「图书」里下载要导出的书。AppleBooks2Floder 会自动识别资料库和标准的本地、iCloud 图书原件目录。若 macOS 提示访问其他应用数据，请允许访问。
-3. 点击「选择文件夹」，选择已配置的网盘同步目录或其中的子目录。坚果云云桥用户可从访达侧栏「位置」进入坚果云。也可以选择普通本地文件夹。
-4. 在「导出范围」选择全部或前面的书。点击「立即导出」，或开启「自动同步」并选择同步频率。关闭窗口后应用仍在菜单栏运行，可从菜单栏暂停自动同步或立即导出。
-5. 等网盘客户端完成上传后，在 Android 或其他设备上打开同一目录，用阅读应用打开或导入 PDF／EPUB。电子书阅读器需要能访问该目录，或通过自己的传书方式导入文件。
+1. 在 Mac 的「图书」里下载要导出的书。AppleBooks2Floder 会自动识别资料库和标准的本地、iCloud 图书原件目录。若 macOS 提示访问其他应用数据，请允许访问。
+2. 点击「选择文件夹」，选择已配置的网盘同步目录或其中的子目录。坚果云云桥用户可从访达侧栏「位置」进入坚果云。也可以选择普通本地文件夹。
+3. 在「导出范围」选择全部或前面的书。点击「立即导出」，或开启「自动同步」并选择同步频率。关闭窗口后应用仍在菜单栏运行，可从菜单栏暂停自动同步或立即导出。
+4. 等网盘客户端完成上传后，在 Android 或其他设备上打开同一目录，用阅读应用打开或导入 PDF／EPUB。电子书阅读器需要能访问该目录，或通过自己的传书方式导入文件。
 
 参考 [Apple Books 下载指南](https://support.apple.com/en-gb/guide/books/ibks5f526382/mac)、[macOS 文件夹授权说明](https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox)和[坚果云 Mac 云桥说明](https://help.jianguoyun.com/?p=6334)。
 

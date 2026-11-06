@@ -4,13 +4,20 @@
 
 AppleBooks2Floder is a macOS app for personal use. It exports downloaded, DRM-free PDFs and EPUBs from Apple Books to a folder synced by Nutstore or another cloud client. After the files sync, you can open them on Android, a tablet, or a compatible e-reader.
 
+## Download and install
+
+[**Download for macOS (v0.4.4)**](https://github.com/xulq/AppleBooks2Floder/raw/5102afa0a2f0c989dc35bd6682dfe76416c1954b/dist/AppleBooks2Floder-macOS.zip) · [View releases](https://github.com/xulq/AppleBooks2Floder/releases)
+
+Requires macOS 14 or later and supports Apple silicon and Intel Macs. Unzip the download, drag `AppleBooks2Floder.app` to Applications, and open it.
+
+This release has no Apple notarization. If macOS says it cannot verify the developer, confirm you downloaded the ZIP from the GitHub link above, then go to **System Settings → Privacy & Security → Open Anyway**. [Apple's instructions for opening the app](https://support.apple.com/en-us/102445)
+
 ## Getting started
 
-1. Unzip `AppleBooks2Floder-macOS.zip`, move `AppleBooks2Floder.app` to Applications, and open it. The app requires macOS 14 or later and supports Apple silicon and Intel Macs.
-2. Download the books you want to export in Apple Books. AppleBooks2Floder finds the catalog and the standard local and iCloud Books folders automatically. If macOS asks for access to another app's data on the first read, allow access.
-3. Click **Choose Folder…** and select an existing cloud sync folder or a subfolder. Nutstore users can find Cloud Bridge folders under **Locations** in the Finder sidebar. A regular local folder also works.
-4. Under **Export Scope**, choose all books or the first N books. Click **Export Now**, or turn on **Automatic Sync** and select an interval. The app stays in the menu bar after you close the window, where you can pause automatic sync or export immediately.
-5. After the cloud client uploads the files, open the same folder on Android or another device and open or import the files in a reader. An e-reader needs access to that folder or a way to import the downloaded files.
+1. Download the books you want to export in Apple Books. AppleBooks2Floder finds the catalog and the standard local and iCloud Books folders automatically. If macOS asks for access to another app's data on the first read, allow access.
+2. Click **Choose Folder…** and select an existing cloud sync folder or a subfolder. Nutstore users can find Cloud Bridge folders under **Locations** in the Finder sidebar. A regular local folder also works.
+3. Under **Export Scope**, choose all books or the first N books. Click **Export Now**, or turn on **Automatic Sync** and select an interval. The app stays in the menu bar after you close the window, where you can pause automatic sync or export immediately.
+4. After the cloud client uploads the files, open the same folder on Android or another device and open or import the files in a reader. An e-reader needs access to that folder or a way to import the downloaded files.
 
 See the [Apple Books download guide](https://support.apple.com/en-gb/guide/books/ibks5f526382/mac), [macOS folder access documentation](https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox), and [Nutstore Cloud Bridge guide in Chinese](https://help.jianguoyun.com/?p=6334).
 
