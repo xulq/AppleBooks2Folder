@@ -6,7 +6,7 @@ AppleBooks2Floder is a macOS app for personal use. It exports downloaded, DRM-fr
 
 ## Download and install
 
-[**Download for macOS (v0.4.4)**](https://github.com/xulq/AppleBooks2Floder/raw/5102afa0a2f0c989dc35bd6682dfe76416c1954b/dist/AppleBooks2Floder-macOS.zip) · [View releases](https://github.com/xulq/AppleBooks2Floder/releases)
+[**Download for macOS**](https://github.com/xulq/AppleBooks2Floder/releases/latest/download/AppleBooks2Floder-macOS.zip) · [View releases](https://github.com/xulq/AppleBooks2Floder/releases)
 
 Requires macOS 14 or later and supports Apple silicon and Intel Macs. Unzip the download, drag `AppleBooks2Floder.app` to Applications, and open it.
 

@@ -6,7 +6,7 @@
 
 ## 下载和安装
 
-[**下载 macOS 安装包（v0.4.4）**](https://github.com/xulq/AppleBooks2Floder/raw/5102afa0a2f0c989dc35bd6682dfe76416c1954b/dist/AppleBooks2Floder-macOS.zip) · [查看发布记录](https://github.com/xulq/AppleBooks2Floder/releases)
+[**下载 macOS 安装包**](https://github.com/xulq/AppleBooks2Floder/releases/latest/download/AppleBooks2Floder-macOS.zip) · [查看发布记录](https://github.com/xulq/AppleBooks2Floder/releases)
 
 适用于 macOS 14 及以上的 Apple 芯片和 Intel Mac。解压 ZIP 后，将 `AppleBooks2Floder.app` 拖到「应用程序」，然后打开。
 
